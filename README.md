@@ -2,8 +2,7 @@
 
 **Enterprise-Grade AI-Powered Predictive Analytics Platform**
 
-> Proprietary platform — source code is confidential.
-> This repository is a portfolio reference.
+A proprietary end-to-end AI/ML platform built for enterprise consulting engagements — this repository documents system capabilities, security architecture, and governance outputs. Source code is maintained in a private repository to protect intellectual property.
 
 ---
 
