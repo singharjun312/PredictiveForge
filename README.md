@@ -145,7 +145,7 @@ across the following domains:
 - **Environmental Science** — multimodal biomass prediction with
   physics-informed constraints
 
-Consulting rate: **$75–$200/hr** depending on engagement scope.
+Consulting rate: ** depending on engagement scope **.
 
 ---
 
