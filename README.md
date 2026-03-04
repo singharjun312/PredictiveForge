@@ -10,7 +10,7 @@
 ## What is PredictiveForge?
 
 PredictiveForge is a full-stack machine learning platform built to accelerate
-end-to-end AI consulting engagements. It reduces a typical 6-week ML pipeline
+end-to-end AI consulting engagements. It reduces a typical ML pipeline project
 to hours — from raw data ingestion through to submission-ready predictions —
 while enforcing enterprise AI governance standards throughout.
 
@@ -31,7 +31,7 @@ lines of production Python across modular, independently testable components.
 
 ### Dual AI Backend
 - **Cloud mode**: Gemini 1.5 Flash / Gemini 2.5 Pro + OpenAI GPT-4
-- **Local/private mode**: Ollama (Mistral, Llama, Gemma) — no data leaves
+- **Local/private mode**: Ollama  — no data leaves
   the client network. Suitable for regulated industries.
 
 ### Master Prompt Architecture
