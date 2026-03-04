@@ -30,9 +30,8 @@ lines of production Python across modular, independently testable components.
 - Overfitting / underfitting detection with automated remediation suggestions
 
 ### Dual AI Backend
-- **Cloud mode**: Gemini 1.5 Flash / Gemini 2.5 Pro + OpenAI GPT-4
-- **Local/private mode**: Ollama  — no data leaves
-  the client network. Suitable for regulated industries.
+- **Cloud mode**: Gemini 1.5 Flash / Gemini 2.5 Pro + OpenAI GPT-4.
+- **Local/private mode**: Ollama  — no data leaves the local the client network. 
 
 ### Master Prompt Architecture
 - "Principal ML Architect" prompt template that pre-scans datasets
@@ -48,9 +47,8 @@ lines of production Python across modular, independently testable components.
 - Generates downloadable HTML compliance reports with risk ratings,
   findings, and remediation recommendations
 - Two-tier audit logging: per-session JSONL files + master archive
-- OWASP LLM Top 10 control mapping (LLM01–LLM10)
-- PII masking (emails, SSNs, phone numbers, credit cards, IP addresses)
-  applied automatically before data enters any pipeline or log
+- OWASP LLM Top 10 control mapping
+- PII masking (emails, SSNs, phone numbers, credit cards, IP addresses) applied automatically before data enters any pipeline or log
 
 ### Streaming Data Pipeline
 - Real-time ingestion from CSV polling, REST APIs, WebSockets,
