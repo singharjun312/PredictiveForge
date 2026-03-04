@@ -2,7 +2,7 @@
 
 **Enterprise-Grade AI-Powered Predictive Analytics Platform**
 
-A proprietary end-to-end AI/ML platform built for enterprise consulting engagements — this repository documents system capabilities, security architecture, and governance outputs. Source code is maintained in a private repository to protect intellectual property.
+Architected for large-scale consulting engagements, this repository serves as the Technical Reference & Governance Framework for a proprietary end-to-end AI ecosystem. It documents the platform's core capabilities, OWASP-aligned security architecture, and NIST AI RMF and EU AI Act-aligned governance outputs. To protect trade secrets and intellectual property, the functional source code is hosted in a private repository.
 
 ---
 
