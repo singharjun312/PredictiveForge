@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>AI Compliance Report - sample.ipynb</title>
+<style>
+body { font-family: 'Segoe UI', Arial, sans-serif; margin: 40px; background: #f8f9fa; color: #333; }
+.header { background: linear-gradient(135deg, #0F2232, #1a3a5c); color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px; }
+.score-card { display: inline-block; background: white; border-radius: 10px; padding: 20px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; min-width: 150px; }
+.score-value { font-size: 2em; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+th { background: #0F2232; color: white; padding: 12px; text-align: left; }
+td { padding: 10px; border-bottom: 1px solid #eee; font-size: 0.9em; }
+tr:hover { background: #f5f5f5; }
+</style></head><body>
+<div class="header">
+<h1>AI Compliance Validation Report</h1>
+<p>Notebook: sample.ipynb | Generated: 2026-03-03T18:09:39.047756</p>
+</div>
+<div>
+<div class="score-card"><div>Overall Score</div><div class="score-value" style="color:#dc3545">46.2%</div><div>Risk: High</div></div>
+<div class="score-card"><div>NIST AI RMF</div><div class="score-value">44.7%</div></div>
+<div class="score-card"><div>EU AI Act</div><div class="score-value">47.7%</div></div>
+</div>
+<h2>Detailed Findings</h2>
+<table><thead><tr><th>Status</th><th>Framework</th><th>Article</th><th>Category</th><th>Requirement</th><th>Severity</th><th>Finding</th><th>Recommendation</th></tr></thead><tbody>
+        <tr>
+            <td><span style="color:#dc3545;font-weight:bold;">FAIL</span></td>
+            <td>NIST AI RMF</td>
+            <td>GOVERN 1.1</td>
+            <td>Risk Management</td>
+            <td>AI risk management policies are documented</td>
+            <td>HIGH</td>
+            <td>No risk management documentation found.</td>
+            <td>Add markdown cells covering: risk identification, impact assessment, mitigation strategies, and responsible AI governance policies.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#dc3545;font-weight:bold;">FAIL</span></td>
+            <td>NIST AI RMF</td>
+            <td>GOVERN 1.5</td>
+            <td>Risk Management</td>
+            <td>Ongoing monitoring processes are in place</td>
+            <td>HIGH</td>
+            <td>No monitoring or drift detection found.</td>
+            <td>Add model monitoring: use wandb/mlflow for experiment tracking, and evidently/alibi-detect for data drift detection.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#28a745;font-weight:bold;">PASS</span></td>
+            <td>NIST AI RMF</td>
+            <td>MAP 2.3</td>
+            <td>Data Governance</td>
+            <td>Data provenance and lineage is documented</td>
+            <td>HIGH</td>
+            <td>Data provenance indicators found: origin, dataset, kaggle</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#dc3545;font-weight:bold;">FAIL</span></td>
+            <td>NIST AI RMF</td>
+            <td>MAP 2.6</td>
+            <td>Bias & Fairness</td>
+            <td>Bias testing and fairness evaluation is present</td>
+            <td>CRITICAL</td>
+            <td>No bias or fairness testing detected.</td>
+            <td>Add bias testing: use fairlearn or aif360 to evaluate model fairness across demographic groups. Test for disparate impact and equalized odds.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#28a745;font-weight:bold;">PASS</span></td>
+            <td>NIST AI RMF</td>
+            <td>MAP 3.4</td>
+            <td>Transparency</td>
+            <td>Model explainability methods are implemented</td>
+            <td>MEDIUM</td>
+            <td>Explainability methods found: shap, interpret</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#28a745;font-weight:bold;">PASS</span></td>
+            <td>NIST AI RMF</td>
+            <td>MEASURE 2.5</td>
+            <td>Validation</td>
+            <td>Model validation and testing is comprehensive</td>
+            <td>HIGH</td>
+            <td>Validation: validation. Metrics: accuracy</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#28a745;font-weight:bold;">PASS</span></td>
+            <td>NIST AI RMF</td>
+            <td>MEASURE 2.7</td>
+            <td>Reproducibility</td>
+            <td>Random seeds and reproducibility controls are set</td>
+            <td>MEDIUM</td>
+            <td>Reproducibility controls found: random_state</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#ffc107;font-weight:bold;">WARN</span></td>
+            <td>NIST AI RMF</td>
+            <td>MANAGE 2.4</td>
+            <td>Security</td>
+            <td>No hardcoded secrets, keys, or credentials in code</td>
+            <td>CRITICAL</td>
+            <td>No credential management pattern detected.</td>
+            <td>Use os.environ or python-dotenv to manage API keys and credentials securely.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#dc3545;font-weight:bold;">FAIL</span></td>
+            <td>NIST AI RMF</td>
+            <td>MANAGE 3.2</td>
+            <td>Error Handling</td>
+            <td>Error handling and fallback mechanisms exist</td>
+            <td>MEDIUM</td>
+            <td>No error handling (try/except) found in code.</td>
+            <td>Add try/except blocks around critical operations: data loading, model training, file I/O, and API calls.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#ffc107;font-weight:bold;">WARN</span></td>
+            <td>NIST AI RMF</td>
+            <td>MANAGE 4.1</td>
+            <td>Logging</td>
+            <td>Logging and audit trail mechanisms are present</td>
+            <td>HIGH</td>
+            <td>Only print statements found (no structured logging).</td>
+            <td>Replace print() with Python's logging module for structured, leveled audit trails.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#ffc107;font-weight:bold;">WARN</span></td>
+            <td>EU AI Act</td>
+            <td>Article 6 (Annex III)</td>
+            <td>Risk Classification</td>
+            <td>AI system risk level is identified and classified</td>
+            <td>CRITICAL</td>
+            <td>High-risk domain detected (credit) but no explicit risk classification.</td>
+            <td>Add explicit risk classification per EU AI Act Annex III. Document whether this is a high-risk, limited-risk, or minimal-risk AI system.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#28a745;font-weight:bold;">PASS</span></td>
+            <td>EU AI Act</td>
+            <td>Article 10</td>
+            <td>Data Governance</td>
+            <td>Training data quality and representativeness is documented</td>
+            <td>HIGH</td>
+            <td>Data quality checks found: nan, preprocess, fillna</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#dc3545;font-weight:bold;">FAIL</span></td>
+            <td>EU AI Act</td>
+            <td>Article 11 (Annex IV)</td>
+            <td>Technical Documentation</td>
+            <td>System description and intended purpose is documented</td>
+            <td>HIGH</td>
+            <td>Insufficient technical documentation.</td>
+            <td>Add markdown cells documenting: system purpose, intended use, architecture, methodology, data requirements, and known limitations.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#28a745;font-weight:bold;">PASS</span></td>
+            <td>EU AI Act</td>
+            <td>Article 19</td>
+            <td>Record-Keeping</td>
+            <td>Automatic logging of events and decisions is enabled</td>
+            <td>HIGH</td>
+            <td>Record-keeping mechanisms: log, timestamp, version</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span style="color:#dc3545;font-weight:bold;">FAIL</span></td>
+            <td>EU AI Act</td>
+            <td>Article 13 / Article 50</td>
+            <td>Transparency</td>
+            <td>Users are informed about AI system capabilities and limitations</td>
+            <td>HIGH</td>
+            <td>No transparency disclosures or limitation documentation.</td>
+            <td>Add a 'Limitations & Intended Use' section documenting: what the model can/cannot do, known failure modes, and usage caveats.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#ffc107;font-weight:bold;">WARN</span></td>
+            <td>EU AI Act</td>
+            <td>Article 14</td>
+            <td>Human Oversight</td>
+            <td>Human-in-the-loop or override mechanisms are present</td>
+            <td>CRITICAL</td>
+            <td>Partial human oversight: approve</td>
+            <td>Add explicit human-in-the-loop checkpoints: confidence thresholds, manual review triggers, and override mechanisms.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#ffc107;font-weight:bold;">WARN</span></td>
+            <td>EU AI Act</td>
+            <td>Article 15</td>
+            <td>Accuracy & Robustness</td>
+            <td>Accuracy metrics and robustness testing are included</td>
+            <td>HIGH</td>
+            <td>Accuracy metrics found (accuracy) but no robustness testing.</td>
+            <td>Add robustness testing: test with noisy data, edge cases, adversarial examples, and out-of-distribution samples.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#ffc107;font-weight:bold;">WARN</span></td>
+            <td>EU AI Act</td>
+            <td>Article 15 (3)</td>
+            <td>Cybersecurity</td>
+            <td>Data encryption and secure data handling practices</td>
+            <td>HIGH</td>
+            <td>No explicit cybersecurity measures detected.</td>
+            <td>Consider: input validation, secure serialization (avoid pickle with untrusted data), HTTPS for API calls, and data encryption.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#ffc107;font-weight:bold;">WARN</span></td>
+            <td>EU AI Act</td>
+            <td>Article 10 (2f)</td>
+            <td>Bias Prevention</td>
+            <td>Measures to detect and prevent discriminatory bias</td>
+            <td>CRITICAL</td>
+            <td>Partial bias prevention: age</td>
+            <td>Expand bias prevention: test across all protected attributes (gender, race, age, disability) and document mitigation steps.</td>
+        </tr>
+        <tr>
+            <td><span style="color:#dc3545;font-weight:bold;">FAIL</span></td>
+            <td>EU AI Act</td>
+            <td>Article 72</td>
+            <td>Post-Market Monitoring</td>
+            <td>Post-deployment monitoring plan is documented</td>
+            <td>MEDIUM</td>
+            <td>No post-market monitoring plan found.</td>
+            <td>Add a monitoring plan: how to detect model degradation, when to retrain, incident reporting procedures, and user feedback integration.</td>
+        </tr></tbody></table>
+<p style="margin-top:30px;color:#999;font-size:0.8em;">Generated by PredictiveForge AI Compliance Validator</p>
+</body></html>
