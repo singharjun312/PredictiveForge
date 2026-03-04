@@ -31,7 +31,7 @@ lines of production Python across modular, independently testable components.
 
 ### Dual AI Backend
 - **Cloud mode**: Gemini 1.5 Flash / Gemini 2.5 Pro + OpenAI GPT-4.
-- **Local/private mode**: Ollama  — no data leaves the local the client network. 
+- **Local/private mode**: Ollama  — no data leaves the local network. 
 
 ### Master Prompt Architecture
 - "Principal ML Architect" prompt template that pre-scans datasets
