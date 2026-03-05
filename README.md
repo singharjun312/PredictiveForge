@@ -71,9 +71,6 @@ lines of production Python across modular, independently testable components.
 - Adversarial validation: AUC-based train/test distribution shift detection
 
 ### Specialist Pipelines
-- **ECG Digitisation**: LAB colour-space grid removal, morphological text
-  suppression, power-weighted centroid signal extraction, clinical
-  validation metrics (Kurtosis, Einthoven Coherence, aVR Axis Alignment)
 - **Pasture Biomass Multimodal**: ResNet50 feature extraction,
   LeakageSafePCA, physics consistency constraints, seed averaging ensemble
 - **Quantitative Finance**: threshold-aware allocation, exponential ramp,
@@ -138,7 +135,6 @@ across the following domains:
   requirements; built-in NIST AI RMF and EU AI Act compliance reporting
 - **Quantitative Finance** — end-to-end strategy building, risk evaluation,
   and submission generation
-- **Medical AI** — ECG digitisation and clinical signal validation pipeline
 - **Environmental Science** — multimodal biomass prediction with
   physics-informed constraints
 
