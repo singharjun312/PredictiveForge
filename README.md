@@ -75,6 +75,9 @@ lines of production Python across modular, independently testable components.
   LeakageSafePCA, physics consistency constraints, seed averaging ensemble
 - **Quantitative Finance**: threshold-aware allocation, exponential ramp,
   Sharpe optimisation, Max Drawdown / Calmar / Sortino risk metrics
+- **ARC-AGI Program Synthesis**: Gemini dual-model ensemble for visual reasoning,
+  automated code compression, 166 of 400 benchmark tasks solved autonomously
+  under Python Standard Library constraints
 
 ### Integrations
 | Service | Purpose |
