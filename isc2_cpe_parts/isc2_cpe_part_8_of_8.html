@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ISC2 CPE Part 8 of 8 — ISO/IEC 42001:2023 &amp; Supply Chain Security</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; color: #222; max-width: 900px; }
+  h1 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 8px; font-size: 20px; }
+  h2 { color: #005599; margin-top: 25px; font-size: 16px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 10px; font-size: 13px; }
+  th { background: #003366; color: white; padding: 8px 12px; text-align: left; }
+  td { padding: 8px 12px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background: #f4f8ff; }
+  .meta { background: #f4f8ff; border: 1px solid #ccd; border-radius: 8px; padding: 16px 20px; margin: 15px 0; }
+  .meta td { border: none; padding: 4px 12px; background: transparent; }
+  .box { background: #fafafa; border: 1px solid #ddd; border-radius: 6px; padding: 16px 20px; margin: 15px 0; }
+  a { color: #005599; }
+  .badge-a { background: #1a6600; color: white; padding: 3px 10px; border-radius: 10px; font-size: 12px; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 25px 0; }
+  @media print { body { margin: 20px; } }
+</style>
+</head>
+<body>
+<h1>ISC2 CPE Evidence — Part 8 of 8</h1>
+<div class="meta">
+<table>
+<tr><td><strong>Candidate</strong></td><td>Arjun Singh</td><td><strong>Certification</strong></td><td>CISSP</td></tr>
+<tr><td><strong>Group</strong></td><td><span class="badge-a">Group A</span></td><td><strong>CPE Credits</strong></td><td>5</td></tr>
+<tr><td><strong>Start Date</strong></td><td>March 10, 2026</td><td><strong>End Date</strong></td><td>April 27, 2026</td></tr>
+<tr><td><strong>Repository</strong></td><td colspan="3"><a href="https://github.com/singharjun312/PredictiveForge">https://github.com/singharjun312/PredictiveForge</a></td></tr>
+</table>
+</div>
+
+<h2>Title</h2>
+<div class="box"><p style="margin:0;font-size:15px"><strong>AI Security &amp; Governance — Part 8 of 8: ISO/IEC 42001:2023 AI Management System Compliance Validator &amp; Supply Chain Security Scanner with SBOM Generation</strong></p></div>
+
+<h2>Synopsis</h2>
+<div class="box"><p style="margin:0">Implemented two enterprise-grade security and governance modules: (1) an automated ISO/IEC 42001:2023 AI Management System compliance validator covering all operational clauses (4–10) with 15 checks, weighted risk scoring, and downloadable HTML compliance reports; and (2) a Supply Chain Security Scanner that checks all installed Python packages against a curated CVE database and generates a Software Bill of Materials (SBOM) in SPDX-inspired format. Both modules are integrated into the PredictiveForge AI platform as auditable, downloadable compliance artifacts.</p></div>
+
+<h2>Summary of Work Experience</h2>
+<div class="box"><p style="margin:0">
+Designed and implemented <strong>iso42001_validator.py</strong>, a full-coverage compliance engine for ISO/IEC 42001:2023 — the international AI Management System standard. The validator performs 15 automated checks spanning: Clause 4 (Context — purpose documentation, stakeholder identification), Clause 6 (Planning — risk &amp; opportunity assessment, measurable AI objectives), Clause 7 (Support — resource identification, documentation quality), Clause 8 (Operation — data governance, AI impact assessment, data quality controls, model validation, production monitoring), Clause 9 (Performance Evaluation — metrics tracking, audit trails), and Clause 10 (Improvement — error handling, continual improvement processes). Implemented severity-weighted scoring (Critical 4x, High 3x, Medium 2x, Low 1x) producing clause-level and overall compliance scores with risk ratings (Low/Medium/High/Critical). Output is a downloadable, print-ready HTML compliance report suitable for internal audits, client deliverables, and regulatory submissions.
+<br><br>
+Designed and implemented <strong>supply_chain_scanner.py</strong>, a Software Composition Analysis (SCA) engine that enumerates all installed Python packages via pkg_resources, evaluates version ranges against a curated CVE database (covering NumPy, Pillow, Requests, Cryptography, urllib3, SetupTools, Certifi, Tornado, scikit-learn, TensorFlow, PyTorch, PyYAML, Paramiko, Werkzeug, Flask), and generates a Software Bill of Materials (SBOM) in SPDX 2.3-inspired format. The scanner produces severity-classified findings (Critical/High/Medium) with NVD CVE links, remediation guidance (minimum safe versions), and a full package inventory with license metadata. Output is a downloadable HTML report suitable for DevSecOps pipeline integration and third-party security assessments.
+<br><br>
+Both modules are integrated into the PredictiveForge "AI Compliance &amp; Security Validator" as dedicated tabs alongside the existing NIST AI RMF and EU AI Act validators, providing a unified governance dashboard. Work is directly applicable to CISSP Domain 3 (Security Architecture), Domain 7 (Security Operations), and Domain 8 (Software Development Security).
+</p></div>
+
+<h2>CISSP Domain Mapping</h2>
+<table>
+<tr><th>CISSP Domain</th><th>Implementation</th></tr>
+<tr><td>Domain 3 — Security Architecture &amp; Engineering</td><td>ISO/IEC 42001:2023 AI Management System controls; weighted severity scoring; risk rating framework (Critical/High/Medium/Low); clause-level compliance architecture covering governance, operations, and improvement lifecycle</td></tr>
+<tr><td>Domain 7 — Security Operations</td><td>Supply chain CVE scanning; Software Composition Analysis (SCA); SBOM generation per SPDX 2.3; vulnerability triage with NVD links; remediation guidance with minimum safe version pinning; audit-ready downloadable reports</td></tr>
+<tr><td>Domain 8 — Software Development Security</td><td>Secure software supply chain assessment; package license inventory; dependency risk classification; integration into CI/CD-compatible compliance dashboard; SPDX-inspired SBOM artifact generation</td></tr>
+</table>
+
+<h2>Technical Deliverables</h2>
+<table>
+<tr><th>File</th><th>Description</th></tr>
+<tr><td><a href="https://github.com/singharjun312/PredictiveForge/blob/main/iso42001_validator.py">iso42001_validator.py</a></td><td>ISO/IEC 42001:2023 compliance validator — 15 checks, Clauses 4–10, weighted scoring, HTML report generation</td></tr>
+<tr><td><a href="https://github.com/singharjun312/PredictiveForge/blob/main/supply_chain_scanner.py">supply_chain_scanner.py</a></td><td>Supply Chain CVE scanner — 15 packages, 20+ CVEs, SBOM generator, HTML report with NVD links</td></tr>
+<tr><td><a href="https://github.com/singharjun312/PredictiveForge/blob/main/app.py">app.py</a></td><td>Streamlit integration — both modules added as tabs in AI Compliance &amp; Security Validator</td></tr>
+<tr><td><a href="https://github.com/singharjun312/PredictiveForge/commit/585a6e27db9437004e2fc2d54b291920b8a9cda9">Commit 585a6e2</a></td><td>GitHub commit — April 27, 2026 — all deliverables pushed to public repository</td></tr>
+</table>
+
+<h2>Supporting Evidence</h2>
+<div class="box">
+<ul style="margin:0">
+<li><a href="https://github.com/singharjun312/PredictiveForge">https://github.com/singharjun312/PredictiveForge</a> — Public GitHub portfolio repository</li>
+<li><a href="https://github.com/singharjun312/PredictiveForge/blob/main/iso42001_validator.py">iso42001_validator.py</a> — ISO/IEC 42001:2023 compliance engine (15 checks, Clauses 4–10)</li>
+<li><a href="https://github.com/singharjun312/PredictiveForge/blob/main/supply_chain_scanner.py">supply_chain_scanner.py</a> — Supply chain CVE scanner &amp; SBOM generator</li>
+<li>Downloaded ISO 42001 HTML compliance report (generated by running the validator in-platform)</li>
+</ul>
+</div>
+
+<hr>
+<p style="font-size:11px;color:#888;">Part 8 of 8 — March 10 – April 27, 2026 — PredictiveForge AI Platform. Verified via GitHub commit 585a6e27db9437004e2fc2d54b291920b8a9cda9. Document prepared April 2026.</p>
+</body>
+</html>
