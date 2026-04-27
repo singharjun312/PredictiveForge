@@ -1,0 +1,48 @@
+Git log — PredictiveForge — Part 8 of 8 (March 10 – April 27, 2026)
+======================================================================
+Total commits: 4
+Date range: 2026-03-10 to 2026-04-27
+Repository: https://github.com/singharjun312/PredictiveForge
+
+Note: Part 8 represents a focused implementation session producing
+two complete security/governance modules (~800 lines of new code).
+Each commit corresponds to a distinct deliverable.
+
+----------------------------------------------------------------------
+commit 5b7d69ee0927f482484ff84171aa74d72aa99e90
+Author: Arjun Singh
+Date:   2026-04-27
+
+    docs: Revise CPE Part 8 — trim to match Part 7 format
+
+commit bff48a77004c4288514ac8fb72d1d8c40c078c01
+Author: Arjun Singh
+Date:   2026-04-27
+
+    feat: Add ISO/IEC 42001:2023 compliance scan report to artifacts/
+
+commit 33b8243f1a1020c64d45726051e72d59071c835b
+Author: Arjun Singh
+Date:   2026-04-27
+
+    docs: Add ISC2 CISSP CPE evidence Part 8 — ISO 42001 & Supply Chain Security
+
+commit 585a6e27db9437004e2fc2d54b291920b8a9cda9
+Author: Arjun Singh
+Date:   2026-04-27
+
+    feat: Add ISO/IEC 42001:2023 validator, Supply Chain Scanner & SBOM
+    
+    - iso42001_validator.py: 15 checks across Clauses 4-10 of ISO/IEC 42001:2023
+    - supply_chain_scanner.py: CVE scanning + SPDX-inspired SBOM generator
+    - app.py: integrated as new tabs in AI Compliance & Security Validator
+    - replit.md: architecture documentation updated
+
+----------------------------------------------------------------------
+
+Deliverables in this part:
+  iso42001_validator.py  — ISO/IEC 42001:2023 compliance engine (15 checks)
+  supply_chain_scanner.py — CVE scanner & SBOM generator
+  app.py                 — 3-tab compliance dashboard integration
+  artifacts/iso42001_compliance_report.html — live compliance scan output
+  isc2_cpe_parts/isc2_cpe_part_8_of_8.html — CPE evidence document
